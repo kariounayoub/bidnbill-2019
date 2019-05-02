@@ -1,0 +1,97 @@
+.contain-messages {
+  display: flex;
+}
+
+.message-bar {
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px - 60px);
+  // position: fixed;
+  overflow: scroll;
+  background: #0e8686;
+  > a {
+    margin: 0;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    padding: 20px 30px;
+    color: white;
+    text-decoration: none;
+    &:hover, &:focus {
+      background: #0a6363;
+      border: none;
+      color: white;
+    }
+  }
+
+  .well {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+
+.message-bar a:hover {
+  opacity: 0.8;
+}
+
+.conv-show {
+  flex: 1 1 auto;
+  margin: 20px;
+  // margin-left: 220px;
+  form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    .form-inputs {
+      flex: 1;
+      .form-group {
+        margin: 0;
+        textarea {
+          border: none;
+          resize: none;
+          height: 70px;
+        }
+      }
+    }
+    .form-actions {
+      position: absolute;
+      right: 30px;
+      input {
+        background: #0f8585;
+        color: white;
+        padding: 12px;
+        border-radius: 4px;
+        margin-right: 35px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+#message-list {
+  height: calc(100vh - 150px - 70px - 60px);
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  .current-sender, .current-receiver {
+    width: 40%;
+    padding: 10px;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .current-sender {
+    align-self: flex-end;
+    border-top-left-radius: 10px;
+    background-color: white;
+  }
+  .current-receiver {
+    background: #0e8686;
+    border-top-right-radius: 10px;
+    color: white;
+  }
+}

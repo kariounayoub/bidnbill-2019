@@ -1,0 +1,60 @@
+<% bids.each do |bid| %>
+  <div class="card-bill-auction">
+    <div class="card-body items">
+      <div class="bulb" id="light">
+        <% if bid.status == "completed" %>
+          <i class="far fa-lightbulb lights"></i>
+        <% else %>
+          <i class="far fa-lightbulb"></i>
+        <% end %>
+      </div>
+      <div class="card-bid-prov">
+        <strong>
+          <%= bid.provider.company %> -
+          <%= bid.price %> €
+        </strong>
+      </div>
+      <div class="economy">
+        <i class="fas fa-money-bill-wave-alt"></i>
+        <%= Integer(bid.price) - Integer(bid.bill.price) %> €
+      </div>
+      <div class="items-right">
+        <% if policy(bid).select? %>
+          <%= link_to "Select", select_bid_path(bid), id: "buttonselect", method: :patch, remote: true %> |
+        <% end %>
+        <% if policy(bid).show? %>
+          <button type="button" class="bid-show" data-toggle="modal" data-target="#bid<%= bid.id %>">
+            <i class="far fa-eye "></i>
+          </button>
+        <% end %>
+        <% if policy(bid).pay? %>
+          <%= link_to "Pay this bid", pay_bid_path(bid) %> |
+        <% end %>
+        <% if policy(bid).destroy? %>
+          <%= link_to bid_path(bid), method: :delete, data: { confirm: 'Are you sure?' } do %> |
+            <i class="far fa-trash-alt"></i>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div id="bid<%= bid.id %>" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-sm">
+     <div class="modal-content" id = "modal-client">
+      <div class = "cross-client">
+      <%= link_to bill_path(bid.bill) do %>
+        <i class="fas fa-times"></i>
+       <% end %>
+     </div>
+     <h3 id="first-element-modal">Bid number <%= bid.id %></h3>
+     <div class= "content">
+
+       <div><strong>Provider </strong></div><p><%= bid.provider.company %></p>
+       <div><strong>Price </strong></div><p><%= bid.price %> €</p>
+       <div><strong>Comment </strong></div><p><%= bid.content %></p>
+       <div><strong>Status </strong></div><p class= "last-element-modal"><%= bid.status %></p>
+    </div>
+     </div>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,119 @@
+
+.card-bill {
+  height: 30vh;
+  background: white;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: 15px 0;
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+}
+
+.card-bill-filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.card-bill-img {
+  position: relative;
+  img {
+    width: 155px;
+  }
+}
+
+.card-bill-info {
+  position: relative;
+  width: 100%;
+}
+
+.bill-edit {
+  z-index: 100 !important;
+}
+
+.card-bill-category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #0e8686;
+  color: white;
+  padding: 5px 10px;
+}
+
+.card-bill-description {
+  position: absolute;
+  bottom: 25%;
+  left: 10px;
+}
+.card-bill-description h2 {
+  font-size: 24px;
+  margin: none;
+  i {
+    font-size: 18px;
+  }
+}
+.card-bill-description p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: none;
+}
+.card-bill-price {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  color: #ffaf2d;
+  font-weight: bolder;
+}
+.card-bill-bids {
+  position: absolute;
+  color: white;
+  background-color: #0f8585;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  right: 0;
+  padding: 10px;
+}
+.card-bill-bids h2 {
+  font-size: 18px;
+  margin: 0;
+}
+.card-bill-bids i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: black;
+}
+.card-bill-bids-new {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.card-bill-link {
+  position: absolute;
+  top: 0;
+  bottom: 15%;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-bill:hover {
+  opacity: 0.8;
+}
+
+.card-bill i {
+  font-size: 24px;
+  }
+
+.create_auction_form{
+  width:50%;
+  margin:0 auto;
+  text-align:center;
+}

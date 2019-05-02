@@ -1,0 +1,91 @@
+.title-new-bill {
+  margin-top: 40px;
+  background-color: #0d8787;
+  color: white;
+  text-transform: uppercase;
+  width: 400px;
+  margin-left: -10px; // TODO
+  margin-top: -10px; // TODO
+  height: 50px;
+  padding-top: 12px;
+  margin-bottom: 0px;
+  }
+
+.container-new-bill {
+  background-color: white;
+  padding: 10px;
+  border-shadow: 5px;
+  margin-top: 20px;
+}
+
+.button-create-bill {
+  border: none;
+  color: white;
+  background-color: #0d8787;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 92%;
+  margin-left: 1%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.back-button-link{
+
+  margin-top: 6px;
+}
+
+
+.small-container {
+  max-width: 400px;
+}
+
+.small-container .button {
+  background-color: #ebf1f1;
+  color: rgb(13,135,135);
+}
+
+.bill_photo {
+  label {
+    display: block;
+    text-align: center;
+    width: 96%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    background-color: white;
+    border: 1px solid rgb(175,175,175);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+
+  select {
+    background-color: rgb(175,175,175);
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.padded-wrapper {
+  padding: 20px;
+  min-height: calc(100vh - 130px);
+  flex-direction: column;
+  display: flex;
+}
+
+
+
+.trait {
+  padding-left: 6px;
+}
+
+
+#form-actions-buttons {
+  margin-left: -16px !important;
+}

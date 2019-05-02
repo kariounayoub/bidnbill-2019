@@ -1,0 +1,114 @@
+.grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 400px 700px 1fr;
+  grid-template-rows: 50% 50%;
+}
+
+.grid-one {
+  grid-row: 1/span 1;
+  grid-column: 2/span 1;
+}
+
+.grid-two {
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
+  width: 296px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-three {
+  grid-row: 1/span2;
+  grid-column: 3/span 1;
+}
+
+.div-bill-show {
+  background-color: white;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  height: 300px;
+  width: 296px;
+  padding-top: 0px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 88px;
+  h3 {
+    background-color: #0d8787;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+
+.div-bill-info {
+  padding-top: 0px;
+  text-align: left;
+  padding: 0px 15px 0px 15px;
+}
+
+.div_bill_edit {
+  background-color: #0d8787;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  i {
+    color: white;
+    margin: 0px 10px 0px 10px;
+  }
+}
+// .modal-image {
+//   margin-top: -47px;
+//       margin-left: -155px;
+// }
+
+.titre-bid {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.items {
+  margin-top: 8px;
+}
+
+#light i {
+  font-size: 32px;
+  margin-left: 10px;
+  margin-top: -3px;
+}
+
+.lights {
+ color: green;
+}
+
+.bulb-green {
+  font-size: 19px;
+  color: #0d8787;
+  margin-right: 12px;
+}
+
+.bulb-black {
+  font-size: 19px;
+  color: black;
+  margin-right: 12px;
+}
+
+.black-pending {
+  color: black;
+}
+.bulb-red {
+  font-size: 19px;
+  color: red;
+}
+
+.economy {
+  color: #ffaf2d;
+}
+
+.div-auction-show i {
+  font-size: 18px;
+}

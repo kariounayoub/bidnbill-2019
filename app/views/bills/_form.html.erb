@@ -1,0 +1,17 @@
+<%= simple_form_for(@bill) do |f| %>
+  <div class="form-inputs" id= "inputs-form">
+    <%= f.association :category, label: "Please select a bill category", prompt: "Select a category", selected: @category&.id %>
+    <%= f.input :current_provider, label: "Who is your current provider?"  %>
+    <%= f.input :address, label: "Please enter your billing address" %>
+    <%= f.input :city, as: :hidden %>
+    <%= f.input :zip_code, as: :hidden %>
+    <%= f.input :price, label: "How much do you pay per month?" %>
+    <%= f.input :consumption, label: "What is your average monthly consumption?" %>
+    <%= f.input :photo, label: "Upload your bill here"%>
+    <%= f.input :photo_cache, as: :hidden %>
+
+  </div>
+  <div class="form-actions" id ="form-actions-buttons">
+    <%= f.button :submit, class: "button-create-bill" %>
+  </div>
+<% end %>

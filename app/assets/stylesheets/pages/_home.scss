@@ -1,0 +1,135 @@
+// Specific CSS for your home-page
+.wrapper-landing-page {
+  margin-top:0;
+  overflow-y: scroll;
+  padding: 20px;
+  align-items: center;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-content h1 {
+  background-color: rgb(13,135,135);
+  color: white;
+  font-weight: bolder;
+  font-size: 88px;
+  font-family: $my-font;
+  letter-spacing: 4px;
+}
+
+.banner-content h2 {
+  margin-bottom: 54px;
+  margin-top: -23px;
+  font-size: 32px;
+  font-family: italic;
+  color: white;
+  font-family: $my-font;
+  font-weight: bolder;
+}
+
+.row-merged {
+  display: flex;
+  align-items: stretch;
+}
+
+.container-cards-landing-page {
+  background-color: rgb(13,135,135);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-ui {
+  // background-image: asset-url('darkdenim3.png');
+  // background-repeat: repeat;
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+  color: white;
+  align-items: center;
+  padding: 28px 19px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.card-ui h1 {
+  font-family: $my-font;
+  color: rgb(13,135,135);
+  font-size: 24px;
+  font-weight: bolder;
+}
+.card-ui p {
+  font-family: $my-font;
+  color: black;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.card-icons img {
+ height: 60px;
+ background-color: white;
+}
+
+.card-icons.invoice img {
+  height: 58px;
+  margin-top: 5px;
+}
+
+.card-icons.eyeglasses img {
+  height: 50px;
+  margin-top: 14px;
+}
+
+.call-to-action {
+  background-color: white;
+  padding: 10px auto;
+}
+
+.call-to-action p {
+  color: rgb(13,135,135);
+  font-family: $my-font;
+  font-size: 20px;
+  border: solid white 2px;
+  border-radius: 8px;
+  border-color: white;
+}
+
+.banner {
+  color: white;
+  text-align: center;
+  flex: 0 0 40vh;
+  height: 100vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+.main-home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 130px);
+  background-position: 50% 41%;
+}
+
+
+.card-description {
+  padding-left: 18px;
+  padding-right: 18px;
+  h3 {
+    font-size: 23px;
+    color: #0d8787;
+  }
+  p {
+    font-size: 17px;
+    font-weight: normal;
+  }
+}

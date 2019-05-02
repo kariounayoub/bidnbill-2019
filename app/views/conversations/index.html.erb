@@ -1,0 +1,36 @@
+<div class="contain-messages">
+  <% if current_user.user_type == "provider" %>
+    <div class="message-bar">
+      <% @auctions.each do |auction| %>
+          <% auction.conversations.each do |conversation| %>
+            <% if policy(conversation).show? %>
+              <%= link_to conversation_path(conversation), remote: true do %>
+                <%= conversation.client.first_name %> <%= conversation.client.last_name %> <br> <%= auction.category.name  %> - auction <%= auction.id %>
+              <% end %>
+            <% end %>
+          <% end %>
+      <% end %>
+    </div>
+  <% elsif current_user.user_type == "client" %>
+    <div class="message-bar">
+      <% @auctions.each do |auction| %>
+        <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse<%= auction.id %>" aria-expanded="false" aria-controls="collapseExample">
+          Bill with <%= auction.bill.current_provider %> (<%= auction.bill.price %>€)
+        </a>
+        <div class="collapse" id="collapse<%= auction.id %>">
+          <div class="well">
+            <% auction.conversations.each do |conversation| %>
+              <% if policy(conversation).show? %>
+                <%= link_to "> Bid by #{conversation.provider.company}", conversation_path(conversation), remote: true   %> <br>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="conv-show">
+
+  </div>
+</div>

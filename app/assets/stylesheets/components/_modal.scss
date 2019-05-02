@@ -1,0 +1,167 @@
+.cross {
+  font-size: 24px;
+    /* text-align: right; */
+    margin-left: 395px !important;
+    margin-top: 1px;
+    padding: 4px;
+    margin-bottom: -20px;
+
+  }
+
+  .cross-client {
+   font-size: 24px;
+   margin-left: 272px;
+   margin-top: 0px;
+ }
+
+ .cross-my-auctions {
+
+  font-size: 24px;
+  margin-left: 872px;
+
+}
+
+.last-cross {
+  font-size: 24px;
+  margin-left: 379px;
+}
+
+.modal-content{
+  border: solid #0d8787;
+}
+
+.content {
+  padding: 14px;
+}
+
+
+#first-element-modal {
+     margin-top: 4px !important;
+    background-color: #0d8787;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+
+
+
+ .modal-my-auctions {
+  padding-bottom: 30px;
+}
+
+
+#modal-client {
+  border: solid #0d8787;
+  // TODO
+}
+
+.bid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  height: 45px;
+  background-color:#ebf1f1;
+  color: #0d8787;
+
+}
+
+.status {
+  p {
+    margin-left: -52px;
+    margin-top: 8px;
+  }
+}
+
+.all-auctions-modal {
+  width: 50%;
+  margin: auto;
+  min-height: 300px;
+
+  border: solid #0d8787;
+  text-align: left;
+  padding-left: 42px;
+  padding-bottom: 30px;
+
+}
+
+.create {
+
+  margin-top: 24px;
+  margin-bottom: 33px;
+  color: white;
+  background: #0d8787;
+  text-transform: uppercase;
+  border: none;
+  border-radius: none;
+}
+
+
+#btn-create {
+  color: white;
+  background: #0d8787;
+  text-transform: uppercase;
+  border: none;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+    /* margin: auto; */
+
+    border-radius: none;
+  }
+  #btn-create:hover {
+    background: white;
+    color: #0d8787;
+    text-decoration: none;
+  }
+
+  .create:hover {
+    background: white;
+    color: #0d8787;
+  }
+
+  .flex-div {
+    display: flex;
+  }
+
+  .first-part {
+    flex: 0 0 30%;
+    padding: 20px;
+    border-right: 1px solid #0d8787;
+  }
+
+  .second-part {
+    flex: 0 1 70%;
+    margin-right: 32px;
+    margin-right: 25px;
+    margin-left: 48px;
+  }
+
+
+.first-title {
+    color: white;
+    background: #0d8787;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 444px;
+    margin-left: -42px;
+    margin-bottom: 21px;
+    margin-top: 10px;
+}
+
+.second-title {
+    color: white;
+    background: #0d8787;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 444px;
+    margin-left: -42px;
+    margin-bottom: 21px;
+    margin-top: 15px;
+  }
+

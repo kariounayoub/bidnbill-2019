@@ -1,0 +1,6 @@
+GOOGLE_API_SERVER_KEY: AIzaSyDjFjx914i076_1yXwSTCMnhx6HJt5ac_w
+GOOGLE_API_BROWSER_KEY: AIzaSyCYEwmkob9myrva3Ucix-nuQTtOrwUVOkI
+CLOUDINARY_URL: "cloudinary://351372525766167:TlfzNFpXZqr1o8yHMpI6I6DUfBw@kacloudinary"
+development:
+STRIPE_PUBLISHABLE_KEY: "pk_test_tQqdmTv3t6FhR0L6x0FwauzT"
+STRIPE_SECRET_KEY: "sk_test_S6EpartnCelHycMoXLFexb2T"

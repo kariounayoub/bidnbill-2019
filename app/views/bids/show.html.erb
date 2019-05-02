@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auction:</strong>
+  <%= @bid.auction.id %>
+</p>
+
+<p>
+  <strong>Provider:</strong>
+  <%= @bid.provider.email %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @bid.status %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @bid.content %>
+</p>
+
+<%= link_to 'Back', bill_path(@bid.auction.bill) %>
